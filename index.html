@@ -1,425 +1,353 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="GMatos Refrigeração: manutenção em ar-condicionado, geladeiras, câmaras frias, peças e seminovos. Atendemos Estância-SE e região."
-    />
-    <meta
-      name="keywords"
-      content="GMatos Refrigeração, manutenção, ar-condicionado, Estância, peças, geladeira, freezer, câmara fria, assistência técnica"
-    />
-    <meta name="author" content="GMatos Refrigeração" />
-    <title>GMatos Refrigeração</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    />
-    <style>
-      body {
-        margin: 0;
-        font-family: "Roboto", sans-serif;
-        background-color: #f7f9fc;
-        color: #0a2740;
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desvendando o TEA – O Guia que Toda Mãe Atípica Precisa</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      background: #121212cc;
+      max-width: 900px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(37, 117, 252, 0.8);
+      padding: 50px 40px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      animation: fadeInUp 1s ease forwards;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 3.2rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 8px #7f9cf5;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      color: #f7f7f7;
+      text-shadow: 0 0 6px #4d65f2;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: #d1d1d1;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-shadow: 0 0 2px #00000050;
+    }
+
+    ul.benefits-list {
+      list-style: none;
+      max-width: 700px;
+      margin: 0 auto 45px;
+      padding: 0 15px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-align: left;
+    }
+
+    ul.benefits-list li {
+      margin-bottom: 18px;
+      padding-left: 34px;
+      position: relative;
+      text-shadow: 0 0 4px #00000070;
+    }
+
+    ul.benefits-list li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #ff6f91;
+      font-size: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      text-shadow: 0 0 3px #00000090;
+    }
+
+    .bonus {
+      background: linear-gradient(90deg, #ff9966, #ff5e62);
+      padding: 25px 35px;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #fff;
+      box-shadow: 0 8px 25px rgba(255, 94, 98, 0.8);
+      text-shadow: 0 0 5px #7d2a2a;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .guarantee {
+      font-size: 1.1rem;
+      color: #d1d1d1;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 600;
+      text-shadow: 0 0 3px #00000050;
+    }
+
+    .testimonial {
+      font-style: italic;
+      font-weight: 600;
+      max-width: 700px;
+      margin: 0 auto 60px;
+      text-align: center;
+      color: #ffe7e7;
+      text-shadow: 0 0 5px #7f3131;
+      font-size: 1.15rem;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 10px;
+      font-weight: 700;
+      color: #ffd1d1;
+    }
+
+    /* PREÇO E PAGAMENTOS */
+    .price-block {
+      margin: 30px auto 40px;
+      text-align: center;
+    }
+
+    .price-container {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .old-price {
+      color: #ffaaaa;
+      font-size: 1.2rem;
+      text-decoration: line-through;
+      text-shadow: 0 0 5px #00000055;
+    }
+
+    .current-price {
+      color: #ffe600;
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: 0 0 8px #ffe600aa;
+    }
+
+    .installments {
+      color: #fefefe;
+      font-size: 1rem;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      text-shadow: 0 0 3px #00000099;
+    }
+
+    .payment-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .payment-icons img {
+      width: 40px;
+      height: 40px;
+      opacity: 0.9;
+      transition: transform 0.3s ease;
+      filter: drop-shadow(0 0 3px #000);
+    }
+
+    .payment-icons img:hover {
+      transform: scale(1.15);
+      opacity: 1;
+    }
+
+    .btn-buy {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+      border: none;
+      color: #fff;
+      padding: 18px 55px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(255, 81, 47, 0.6);
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      user-select: none;
+      text-decoration: none;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .btn-buy:hover {
+      filter: brightness(1.15);
+      box-shadow: 0 12px 30px rgba(255, 81, 47, 0.9);
+      transform: translateY(-3px);
+    }
+
+    .ebook-cover {
+      display: block;
+      margin: 40px auto 30px;
+      max-width: 240px;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(255, 81, 47, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .ebook-cover:hover {
+      transform: scale(1.05) rotate(1deg);
+      box-shadow: 0 20px 40px rgba(255, 81, 47, 0.8);
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
       }
-      header {
-        background-color: #e5f6ff;
-        text-align: center;
-        padding: 20px;
+      100% {
+        opacity: 1;
+        transform: translateY(0);
       }
-      header img {
-        max-width: 200px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .container {
+        padding: 30px 20px;
       }
+
       h1 {
-        margin: 10px 0;
-        font-size: 26px;
+        font-size: 2.4rem;
       }
-      nav {
-        background-color: #bde2f5;
-        text-align: center;
-        padding: 10px 0;
-      }
-      nav a {
-        color: #0a2740;
-        text-decoration: none;
-        margin: 0 15px;
-        font-weight: bold;
-      }
-      section {
-        padding: 20px;
-        max-width: 1000px;
-        margin: auto;
-      }
-      .servicos ul,
-      .galeria {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 0;
-      }
-      .servicos li,
-      .galeria-item {
-        background-color: #ffffff;
-        border: 1px solid #ccc;
-        list-style: none;
-        padding: 15px;
-        flex: 1 1 280px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-      }
-      .galeria-item img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-      }
-      .formulario {
-        background-color: #ffffff;
-        padding: 20px;
-        border: 1px solid #ccc;
-        margin-bottom: 30px;
-      }
-      .formulario h3 {
-        margin-top: 0;
-      }
-      .formulario label {
-        display: block;
-        margin-top: 10px;
-        font-weight: 600;
-      }
-      .formulario input,
-      .formulario textarea,
-      .formulario select {
-        width: 100%;
-        padding: 8px;
-        margin-top: 5px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        font-size: 14px;
-      }
-      .btn {
-        background-color: #007db8;
-        color: #fff;
-        padding: 10px 20px;
-        display: inline-block;
-        margin-top: 10px;
-        text-decoration: none;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-      }
-      footer {
-        background-color: #0a2740;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-        font-size: 14px;
-      }
-      #map {
-        width: 100%;
-        height: 300px;
-        margin-top: 20px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img
-        src="https://i.postimg.cc/g0Ghm283/LOGO-GMATOS.png"
-        alt="Logo GMatos Refrigeração"
-      />
-      <h1>GMatos Refrigeração</h1>
-      <p>
-        Especialistas em manutenção e venda de peças de refrigeração em
-        Estância-SE
-      </p>
-    </header>
 
-    <nav>
-      <a href="#servicos">Serviços</a>|
+      h2 {
+        font-size: 1.4rem;
+      }
 
-      <a href="#produtos">Produtos</a>|
+      p, ul.benefits-list {
+        font-size: 1rem;
+      }
 
-      <a href="#formulario">Solicitar Serviço</a>
-    </nav>
+      ul.benefits-list {
+        text-align: left;
+      }
 
-    <section id="servicos" class="servicos">
-      <h2>Serviços</h2>
-      <ul>
-        <li>Manutenção em ar-condicionado</li>
-        <li>Reparo em geladeiras, freezer e bebedouros</li>
-        <li>Instalação de câmaras frias</li>
-        <li>Conserto de máquinas de lavar</li>
-        <li>Venda de peças e insumos</li>
-      </ul>
-    </section>
+      .ebook-cover {
+        max-width: 180px;
+      }
 
-    <section id="produtos">
-      <h2>Produtos e Peças</h2>
-      <div class="galeria">
-        <div class="galeria-item">
-          <img
-            src="https://i.postimg.cc/wxNDXZqy/da63a4dc-1f90-4dec-8887-9927e32d3e91.jpg"
-            alt="Óleo Motreal"
-          />
-          <p>Óleo Montreal Sintético - Alta performance para compressores.</p>
-        </div>
-        <div class="galeria-item">
-          <img
-            src="https://i.postimg.cc/G3vs8DKv/1e877fb2-5601-40fe-8355-224a4921b984.jpg"
-            alt="Mangueira"
-          />
-          <p>Mangueira de entrada de água - Alta resistência e durabilidade.</p>
-        </div>
-        <div class="galeria-item">
-          <img
-            src="https://i.postimg.cc/pd9m25yh/dcbb46b3-aebf-46c7-8e89-e137bee3a4a6.jpg"
-            alt="Controle universal"
-          />
-          <p>Controle Universal VIX - Compatível com vários modelos.</p>
-        </div>
-        <div class="galeria-item">
-          <img
-            src="https://i.postimg.cc/d1rDCM2J/a3aec50f-7bac-4cd3-a854-40dc939454ea.jpg"
-            alt="Compressor Embraco"
-          />
-          <p>Compressor Embraco - Potência e eficiência garantidas.</p>
-        </div>
-        <div class="galeria-item">
-          <img
-            src="https://i.postimg.cc/CMCzLgMN/60c54d17-c8d7-4162-83a0-9f8e2b3ba473.jpg"
-            alt="Filtro 1/2"
-          />
-          <p>Filtro 1/2 DML 164 - Qualidade no controle de impurezas.</p>
-        </div>
-        <div class="galeria-item">
-          <img
-            src="https://i.postimg.cc/MKcNmWc0/f056819-7140-4f46-ac8d-78771fde077d.jpg"
-            alt="Controlador de temperatura"
-          />
-          <p>Controlador Full Gauge - Precisão no controle térmico.</p>
-        </div>
-        <div class="galeria-item">
-          <img
-            src="https://i.postimg.cc/sxM6mc2f/add1d554-1e12-406f-9577-f0c038727eb1.jpg"
-            alt="Capacitadores"
-          />
-          <p>Capacitadores VIX - Para diversas aplicações em refrigeração.</p>
-        </div>
-      </div>
-      <br />
-      <a
-        class="btn"
-        href="https://wa.me/5579999358968?text=Olá%2C+gostaria+de+ver+mais+produtos+disponíveis%21"
-      >
-        Ver mais no WhatsApp
-      </a>
-    </section>
+      .btn-buy {
+        padding: 14px 40px;
+        font-size: 1.1rem;
+      }
 
-    <section id="formulario">
-      <h2>Solicitação de Manutenção</h2>
-      <div class="formulario">
-        <h3>Formulário de Serviço</h3>
-        <form id="form-servico" onsubmit="return enviarServicoWhatsApp()">
-          <label for="nome">Nome Completo:</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            required
-            placeholder="Seu nome completo"
-          />
+      .price-container {
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
 
-          <label for="telefone">Telefone / WhatsApp:</label>
-          <input
-            type="tel"
-            id="telefone"
-            name="telefone"
-            required
-            placeholder="(99) 99999-9999"
-          />
+  <main class="container" role="main" aria-label="Página de vendas do e-book Desvendando o TEA">
+    <h1>Desvendando o TEA</h1>
+    <h2>O guia essencial para mães que querem transformar a vida do seu filho autista</h2>
 
-          <label for="rua">Rua:</label>
-          <input
-            type="text"
-            id="rua"
-            name="rua"
-            required
-            placeholder="Nome da rua"
-          />
+    <img
+      class="ebook-cover"
+      src="https://i.postimg.cc/W4hHN61G/IMG-5647.jpg"
+      alt="Capa do e-book Desvendando o TEA"
+      loading="lazy"
+    />
 
-          <label for="numero">Número:</label>
-          <input
-            type="text"
-            id="numero"
-            name="numero"
-            required
-            placeholder="Número da residência"
-          />
+    <p>Você se sente perdida, sobrecarregada ou sem saber por onde começar a entender o Transtorno do Espectro Autista?</p>
 
-          <label for="bairro">Bairro:</label>
-          <input
-            type="text"
-            id="bairro"
-            name="bairro"
-            required
-            placeholder="Bairro"
-          />
+    <ul class="benefits-list" aria-label="Benefícios do e-book Desvendando o TEA">
+      <li>Entenda o autismo com explicações simples e baseadas em ciência</li>
+      <li>Aprenda estratégias práticas para o dia a dia da sua família</li>
+      <li>Conheça relatos reais que vão te acolher e dar esperança</li>
+      <li>Ganhe apoio emocional para enfrentar os desafios com mais confiança</li>
+    </ul>
 
-          <label for="cidade">Cidade:</label>
-          <input
-            type="text"
-            id="cidade"
-            name="cidade"
-            required
-            placeholder="Cidade"
-          />
-
-          <label for="estado">Estado:</label>
-          <input
-            type="text"
-            id="estado"
-            name="estado"
-            required
-            placeholder="Estado"
-          />
-
-          <label for="servico">Tipo de Serviço:</label>
-          <select id="servico" name="servico" required>
-            <option value="">Selecione</option>
-            <option value="Manutenção em ar-condicionado">
-              Manutenção em ar-condicionado
-            </option>
-            <option value="Reparo em geladeiras, freezer e bebedouros">
-              Reparo em geladeiras, freezer e bebedouros
-            </option>
-            <option value="Instalação de câmaras frias">
-              Instalação de câmaras frias
-            </option>
-            <option value="Conserto de máquinas de lavar">
-              Conserto de máquinas de lavar
-            </option>
-            <option value="Venda de peças e insumos">
-              Venda de peças e insumos
-            </option>
-          </select>
-          <button type="submit" class="btn">Enviar pelo WhatsApp</button>
-        </form>
+    <div class="price-block" aria-label="Preço e formas de pagamento">
+      <div class="price-container">
+        <span class="old-price">De <s>R$ 49,90</s></span>
+        <span class="current-price">Por apenas <strong>R$ 9,90</strong></span>
       </div>
 
-      <div class="formulario">
-        <h3>Compra de Seminovos</h3>
-        <form
-          id="form-compra"
-          action="https://wa.me/5579999358968"
-          method="GET"
-          onsubmit="return enviarCompraWhatsApp()"
-        >
-          <label for="nomeCompra">Nome Completo:</label>
-          <input
-            type="text"
-            id="nomeCompra"
-            name="nomeCompra"
-            required
-            placeholder="Seu nome completo"
-          />
+      <div class="installments">Ou em até 2x com juros no cartão</div>
 
-          <label for="telefoneCompra">Telefone / WhatsApp:</label>
-          <input
-            type="tel"
-            id="telefoneCompra"
-            name="telefoneCompra"
-            required
-            placeholder="(99) 99999-9999"
-          />
-
-          <label for="produtoInteresse">Produto de Interesse:</label>
-          <select id="produtoInteresse" name="produtoInteresse" required>
-            <option value="">Selecione</option>
-            <option value="Geladeira">Geladeira</option>
-            <option value="Freezer">Freezer</option>
-            <option value="Ar-condicionado">Ar-condicionado</option>
-            <option value="Máquina de Lavar">Máquina de Lavar</option>
-          </select>
-
-          <button type="submit" class="btn">Enviar pelo WhatsApp</button>
-        </form>
+      <div class="payment-icons" aria-label="Formas de pagamento">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/bank-card-back-side.png" alt="Cartão de Crédito" />
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/qr-code.png" alt="Pix" />
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/receipt.png" alt="Boleto Bancário" />
       </div>
-    </section>
+    </div>
 
-    <section id="contato">
-      <h2>Fale Conosco</h2>
-      <p>
-        <strong>Endereço:</strong> Av. Raimundo Silveira Souza, 1291 - Alagoas,
-        Estância - SE
-      </p>
-      <p>
-        <strong>Telefone / WhatsApp:</strong>
-        <a href="https://wa.me/5579999358968">(79) 99935-8968</a>
-      </p>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:gmatos.oliveira@hotmail.com"
-          >gmatos.oliveira@hotmail.com</a
-        >
-      </p>
-      <p><strong>CNPJ:</strong> 32.736.686/0001-70</p>
+    <div class="bonus" role="region" aria-label="Bônus especial do e-book">
+      🎁 Ao comprar, leve grátis jogos digitais educativos e interativos para o desenvolvimento do seu filho
+    </div>
 
-      <h2>Localização</h2>
-      <div style="width: 100%; height: 300px;">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.267776472658!2d-37.9127598889815!3d-11.272186032049615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7101859c8d5c485%3A0x29c7d0d0c3d9b8e8!2sAv.%20Raimundo%20Silveira%20Souza%2C%201291%20-%20Alagoas%2C%20Est%C3%A2ncia%20-%20SE%2C%2049200-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
-          width="100%"
-          height="300"
-          style="border: 0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
+    <p class="guarantee" role="region" aria-label="Garantia de reembolso">
+      🛡️ Garantia de satisfação: 30 dias para pedir seu reembolso, sem perguntas e sem burocracia.
+    </p>
 
-    <footer>
-      © 2025 GMatos Refrigeração | Todos os Direitos Reservados | Desenvolvido
-      por MR Soluções em Web
-    </footer>
+    <blockquote class="testimonial" role="region" aria-label="Depoimento de cliente satisfeita">
+      “Esse e-book mudou completamente minha visão e me deu ferramentas para cuidar do meu filho com muito mais amor e clareza.”  
+      <strong>Ana Paula, mãe atípica</strong>
+    </blockquote>
 
-    <script>
-      function enviarServicoWhatsApp() {
-        const nome = document.getElementById("nome").value;
-        const telefone = document.getElementById("telefone").value;
-        const rua = document.getElementById("rua").value;
-        const numero = document.getElementById("numero").value;
-        const bairro = document.getElementById("bairro").value;
-        const cidade = document.getElementById("cidade").value;
-        const estado = document.getElementById("estado").value;
-        const servico = document.getElementById("servico").value;
+    <a href="https://SEULINKDAQIFI" class="btn-buy" target="_blank" rel="noopener noreferrer" aria-label="Botão para adquirir o e-book Desvendando o TEA">
+      Quero Desvendar o TEA Agora
+    </a>
+  </main>
 
-        const mensagem = `Olá! Gostaria de solicitar um serviço:\n\n👤 Nome: ${nome}\n📞 Telefone: ${telefone}\n📍 Endereço: ${rua}, Nº ${numero}, Bairro ${bairro} - ${cidade}/${estado}\n🔧 Serviço desejado: ${servico}`;
-
-        const url = `https://wa.me/5579999358968?text=${encodeURIComponent(
-          mensagem
-        )}`;
-        window.open(url, "_blank");
-        return false; // evita envio tradicional do formulário
-      }
-
-      function enviarCompraWhatsApp() {
-        const nome = document.getElementById("nomeCompra").value;
-        const telefone = document.getElementById("telefoneCompra").value;
-        const produto = document.getElementById("produtoInteresse").value;
-
-        const mensagem = `Olá! Tenho interesse em adquirir um produto seminovo:\n\n👤 Nome: ${nome}\n📞 Telefone: ${telefone}\n📦 Produto: ${produto}`;
-
-        const url = `https://wa.me/5579999358968?text=${encodeURIComponent(
-          mensagem
-        )}`;
-        window.open(url, "_blank");
-        return false;
-      }
-    </script>
-  </body>
+</body>
 </html>
